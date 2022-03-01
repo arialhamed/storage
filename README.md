@@ -1,2 +1,2 @@
 # files-001
-files repository. each of these are up to your liking...
+files repository. i just use the releases thing. holds more and it uploads very quick. plus, i gave up encrypting the files.

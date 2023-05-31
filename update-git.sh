@@ -7,10 +7,10 @@ if [ $(find `pwd` -type f -size +100M ! -path '*/.git/*' | wc -l) -eq 0 ]; then
 	if [ -n "$1" ]; then
 	   	ms=": $1"
 	fi
-	git fetch && git pull && git add . && git commit -m "$dt$ms" && git push
+	git pull && git add . && git commit -m "$dt$ms" && git push
 else
 	find `pwd` -type f -size +100M ! -path '*/.git/*'
 	echo "there are files larger than 100M, git cannot upload files that size and larger, fix it."
 fi
 
-notify-send "git operations are done"
+notify-send "git operations are done" "repo is in `pwd`"

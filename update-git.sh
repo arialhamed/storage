@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cp ~/snap/dolphin-emulator/common/.local/share/dolphin-emu/ backup/dolphin-emu/
+cp -r ~/snap/dolphin-emulator/common/.local/share/dolphin-emu/ backup/dolphin-emu/
 
 if [ $(find `pwd` -type f -size +100M ! -path '*/.git/*' | wc -l) -eq 0 ]; then
 	dt=$(date '+%d-%b-%Y %H:%M:%S');

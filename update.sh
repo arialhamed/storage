@@ -1,6 +1,6 @@
 #!/bin/bash
 
-7z a -v95m backup/dolphin-emu.7z ~/snap/dolphin-emulator/common/.local/share/dolphin-emu/
+7z u -v95m backup/dolphin-emu.7z ~/snap/dolphin-emulator/common/.local/share/dolphin-emu/
 #cp -r ~/snap/dolphin-emulator/common/.local/share/dolphin-emu/ backup/dolphin-emu/
 
 if [ $(find `pwd` -type f -size +100M ! -path '*/.git/*' | wc -l) -eq 0 ]; then
